@@ -94,7 +94,7 @@
                 <span class="footer-copy">&copy; 2026 KOSL &mdash; Kropp Olsha Science Lab. All rights reserved.</span>
                 <div class="footer-meta">
                     <span class="footer-location">Toronto, Canada</span>
-                    <span class="footer-version">v0.3.0</span>
+                    <span class="footer-version">v0.3.1</span>
                 </div>
             </div>
         </div>`;
