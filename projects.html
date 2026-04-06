@@ -15,7 +15,7 @@
     <div class="page-header">
         <span class="label">Research</span>
         <h1>Projects</h1>
-        <p>What we're working on and what's coming next.</p>
+        <p>Active and planned research in open source semiconductor fabrication.</p>
     </div>
 
     <!-- Active Projects -->
@@ -23,7 +23,7 @@
         <div class="container">
             <div class="section-header reveal">
                 <div class="section-label">Active</div>
-                <h2 class="section-heading">Right now</h2>
+                <h2 class="section-heading">Current projects</h2>
             </div>
             <div class="grid-2 reveal">
                 <div class="card card-featured" style="padding: 36px;">
@@ -38,16 +38,16 @@
                         </div>
                         <span class="badge badge-active" style="margin-bottom: 12px; display: inline-block;">Phase 1 — Active</span>
                         <h3>KOSL Albu</h3>
-                        <div class="project-tagline">Egg white lithography</div>
+                        <div class="project-tagline">Egg white photoresist for home semiconductor fabrication</div>
                         <p>
-                            We coat glass slides with egg white mixed with vitamin B2, blast it
-                            with a 5W 450nm laser on a $525 CNC, and develop in water.
-                            The riboflavin generates singlet oxygen which crosslinks the ovalbumin
-                            protein, making exposed areas water-insoluble.
+                            Lithography process using egg white albumen as photoresist with
+                            riboflavin (vitamin B2) as a 450nm photosensitizer. 5W laser diode
+                            on a CNC 3018 platform. Water-based development.
                         </p>
                         <p>
-                            Right now we're in Phase 1: proving this actually works at 100μm
-                            under a microscope. Once that's confirmed, we start building transistors.
+                            Currently in Phase 1: validating photoresist patterning at 100μm
+                            feature size on glass substrates. Riboflavin-mediated singlet oxygen
+                            crosslinks the ovalbumin protein, creating water-insoluble regions.
                         </p>
                         <div class="project-card-footer">
                             <span class="tag">100μm target</span>
@@ -71,15 +71,15 @@
                         </div>
                         <span class="badge badge-upcoming" style="margin-bottom: 12px; display: inline-block;">Planned</span>
                         <h3>KOSL Machine 3</h3>
-                        <div class="project-tagline">Automated maskless lithography machine</div>
+                        <div class="project-tagline">Automated maskless direct-write lithography system</div>
                         <p>
-                            DLP projector instead of a laser, machine vision for alignment,
-                            automated wafer handling. 10μm target resolution.
-                            Can't start until Albu Phase 2 validates the process.
+                            Desktop lithography system with DLP maskless projection, machine vision
+                            alignment, and automated wafer handling. 10μm target resolution.
+                            Pending Albu Phase 2 completion.
                         </p>
                         <p>
-                            This is the guts of the 10MT5000 product — the machine we'll
-                            eventually sell as a turnkey desktop fab.
+                            Serves as the core platform for the KOSL 10MT5000 Auto product — a
+                            turnkey desktop semiconductor fab with HEPA enclosure.
                         </p>
                         <div class="project-card-footer">
                             <span class="tag">10μm target</span>
@@ -98,7 +98,7 @@
             <div class="section-header reveal">
                 <div class="section-label">Roadmap</div>
                 <h2 class="section-heading">Albu development phases</h2>
-                <p class="section-desc">The plan, from "does egg white even work" to "we built a CPU."</p>
+                <p class="section-desc">From photoresist validation through first transistors to a fabricated CPU.</p>
             </div>
             <div class="timeline reveal">
                 <div class="timeline-item">
@@ -106,8 +106,8 @@
                     <div class="timeline-phase">Phase 1 — Current</div>
                     <div class="timeline-title">Photoresist Validation</div>
                     <div class="timeline-desc">
-                        Does egg white photoresist actually work at 450nm? Shoot a pattern with the CNC laser,
-                        develop in water, check under the microscope. We need to see 100μm features on glass.
+                        Validate egg white photoresist at 450nm using CNC laser and optical microscope.
+                        Success criterion: microscope-verified 100μm patterns on glass, developed in water.
                     </div>
                     <div class="timeline-tags">
                         <span class="tag">$525 setup</span>
@@ -119,8 +119,8 @@
                     <div class="timeline-phase">Phase 2</div>
                     <div class="timeline-title">First Transistors</div>
                     <div class="timeline-desc">
-                        Make actual transistors. ZnO TFTs on glass, Schottky-barrier MOSFETs,
-                        laser-doped silicon, Cu2O p-type. Goal: a 10-transistor ring oscillator that actually oscillates.
+                        First working transistors: ZnO TFTs on glass, Schottky-barrier MOSFETs,
+                        laser-doped Si MOSFETs, Cu2O p-type TFTs. Culminating in a 5-stage ring oscillator (10 transistors).
                     </div>
                     <div class="timeline-tags">
                         <span class="tag">ZnO TFT</span>
@@ -133,8 +133,8 @@
                     <div class="timeline-phase">Phase 2.5</div>
                     <div class="timeline-title">Automated Lithography Upgrade</div>
                     <div class="timeline-desc">
-                        Ditch the CNC laser for a DLP projector — way faster, whole-field exposure.
-                        Semi-automate the spin coating and development. This becomes the 50MT500 product.
+                        Transition from CNC laser to DLP maskless projection lithography. Semi-automated
+                        spin coating and development. Basis for the KOSL 50MT500 Auto product.
                     </div>
                     <div class="timeline-tags">
                         <span class="tag">50μm features</span>
@@ -146,8 +146,8 @@
                     <div class="timeline-phase">Phase 3</div>
                     <div class="timeline-title">Full Automated Fab Line</div>
                     <div class="timeline-desc">
-                        The whole process, automated end-to-end. Precision stages, HEPA box,
-                        machine vision alignment. 10 engineering sub-phases to get through. This is the big one.
+                        Complete end-to-end automated fabrication. Precision stages, HEPA enclosure,
+                        machine vision alignment. 10 engineering sub-phases. Basis for the KOSL 10MT5000 Auto.
                     </div>
                     <div class="timeline-tags">
                         <span class="tag">10μm features</span>
@@ -159,8 +159,8 @@
                     <div class="timeline-phase">Phase 4</div>
                     <div class="timeline-title">First CPU</div>
                     <div class="timeline-desc">
-                        Make a CPU. Either a custom 4-bit design (~910 transistors) or a
-                        SERV RISC-V core (~4,500 transistors). Depends on how good the yields are from Phase 3.
+                        Fabricate a working CPU: either a custom 4-bit "Albu-4" (~910 transistors) or a
+                        SERV RISC-V core (~4,500 transistors), depending on Phase 3 yield data.
                     </div>
                     <div class="timeline-tags">
                         <span class="tag">4-bit or RISC-V</span>
@@ -172,8 +172,8 @@
                     <div class="timeline-phase">Future</div>
                     <div class="timeline-title">DUV Stepper</div>
                     <div class="timeline-desc">
-                        Schwarzschild reflective objective + surplus KrF excimer laser = 500nm features.
-                        That's Pentium-class density. Millions of transistors. This is the long game.
+                        Schwarzschild reflective objective DUV stepper with surplus KrF excimer laser.
+                        500nm resolution — Pentium-class density, millions of transistors per die.
                     </div>
                     <div class="timeline-tags">
                         <span class="tag">500nm features</span>

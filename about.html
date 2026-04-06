@@ -14,8 +14,8 @@
     <!-- Page Header -->
     <div class="page-header">
         <span class="label">About</span>
-        <h1>What KOSL is</h1>
-        <p>A lab in Toronto trying to make chips without the billion-dollar fab.</p>
+        <h1>About KOSL</h1>
+        <p>Toronto-based open source semiconductor lithography research.</p>
     </div>
 
     <!-- Mission -->
@@ -23,31 +23,34 @@
         <div class="container">
             <div class="grid-2 reveal">
                 <div>
-                    <div class="section-label">The idea</div>
-                    <h2 class="section-heading">PCBs used to be hard too</h2>
+                    <div class="section-label">Mission</div>
+                    <h2 class="section-heading">Accessible chip fabrication</h2>
                     <p style="margin-bottom: 16px;">
-                        Twenty years ago, making a PCB at home was a pain. Now you can
-                        order one from JLCPCB for two bucks. We think chip fabrication
-                        is headed the same way, but someone has to figure out the process first.
+                        Semiconductor fabrication is locked behind billion-dollar fabs,
+                        toxic chemical supply chains, and restricted equipment. KOSL is
+                        building the processes and tools to change that — making chip-making
+                        as accessible as PCB fabrication.
                     </p>
                     <p>
-                        That's us. We're replacing every toxic, expensive, restricted chemical
-                        in semiconductor fab with stuff you can buy at a grocery store. HF becomes
-                        drain cleaner. Photoresist becomes egg whites. The developer is water.
+                        Every chemical in our process is a safe, consumer-available substitute
+                        for its industrial counterpart. HF is replaced with KOH. PMMA photoresist
+                        is replaced with egg white albumen. The developer is water.
                     </p>
                 </div>
                 <div>
-                    <div class="section-label">How it works</div>
-                    <h2 class="section-heading">Grocery store chemistry</h2>
+                    <div class="section-label">Process</div>
+                    <h2 class="section-heading">Albumen lithography</h2>
                     <p style="margin-bottom: 16px;">
-                        Egg white protein (ovalbumin) works as both photoresist and gate dielectric.
-                        Riboflavin — vitamin B2 — is the photosensitizer. Hit it with a 450nm laser
-                        and the protein crosslinks. Wash off the unexposed parts with water. Done.
+                        Egg white protein (ovalbumin) functions as both photoresist and gate
+                        dielectric (k ≈ 5–6, higher than SiO2). Riboflavin (vitamin B2) acts as
+                        a Type II photosensitizer at 450nm, generating singlet oxygen that crosslinks
+                        the protein into water-insoluble patterns.
                     </p>
                     <p>
-                        The ovalbumin also has a dielectric constant of ~5-6, higher than SiO2.
-                        So the same egg white that patterns your features also works as your
-                        gate insulator. Cost per mL: about a third of a cent.
+                        Exposure uses a 5W 450nm laser diode on a CNC platform. Development
+                        is distilled water. The dual-function material serves as both the
+                        patterning layer and the gate insulator at $0.004/mL — versus $1.49/mL
+                        for conventional PMMA.
                     </p>
                 </div>
             </div>
@@ -59,7 +62,7 @@
         <div class="container">
             <div class="section-header reveal">
                 <div class="section-label">Principles</div>
-                <h2 class="section-heading">The rules</h2>
+                <h2 class="section-heading">Design constraints</h2>
             </div>
             <div class="grid-3 reveal">
                 <div class="card">
@@ -71,7 +74,7 @@
                         </svg>
                         <div>
                             <h3>Open Source</h3>
-                            <p>Everything goes on GitHub. Process recipes, schematics, experiment results, failures included. No patents, no paywalls, no "contact us for pricing."</p>
+                            <p>All process recipes, equipment schematics, and experiment results — including failures — published under permissive licenses. No patents, no paywalls.</p>
                         </div>
                     </div>
                 </div>
@@ -84,7 +87,7 @@
                         </svg>
                         <div>
                             <h3>Accessible</h3>
-                            <p>If you can't buy it on Amazon or at a grocery store, we don't use it. No "well you just need to find a decommissioned fab" hand-waving.</p>
+                            <p>No specialty chemicals, restricted materials, or surplus equipment from decommissioned fabs. Every supply is consumer-available from standard retailers.</p>
                         </div>
                     </div>
                 </div>
@@ -97,7 +100,7 @@
                         </svg>
                         <div>
                             <h3>Safe</h3>
-                            <p>No hydrofluoric acid. No organic solvents. Nothing that'll kill you if you spill it. You should be able to do this in your garage without worrying.</p>
+                            <p>No hydrofluoric acid. No organic solvents. Water-based development, KOH etching. Safe for garage labs, makerspaces, and university teaching environments.</p>
                         </div>
                     </div>
                 </div>
@@ -110,7 +113,7 @@
         <div class="container">
             <div class="section-header reveal">
                 <div class="section-label">Team</div>
-                <h2 class="section-heading">Us</h2>
+                <h2 class="section-heading">Founders</h2>
             </div>
             <div class="team-grid reveal">
                 <div class="card">
@@ -119,7 +122,7 @@
                         <div class="team-info">
                             <h3>Lev Kropp</h3>
                             <div class="role">Co-founder</div>
-                            <p>Runs the Albu photoresist research and designs the machines. The one who figured out you could use egg whites.</p>
+                            <p>Process development and equipment design. Leads the Albu photoresist research and lithography machine architecture.</p>
                         </div>
                     </div>
                 </div>
@@ -129,7 +132,7 @@
                         <div class="team-info">
                             <h3>Yuval Olsha</h3>
                             <div class="role">Co-founder</div>
-                            <p>Builds the hardware, writes the software, wires everything together. Makes it so other people can actually use what Lev invents.</p>
+                            <p>Engineering and systems integration. Builds the hardware, software, and product infrastructure around the core research.</p>
                         </div>
                     </div>
                 </div>
@@ -141,9 +144,9 @@
     <section class="section section-dark">
         <div class="container">
             <div class="section-header section-header-center reveal">
-                <div class="section-label">Substitutions</div>
-                <h2 class="section-heading">What replaces what</h2>
-                <p class="section-desc">Every nasty chemical in the standard process, and what we use instead.</p>
+                <div class="section-label">Chemical Substitutions</div>
+                <h2 class="section-heading">Complete process replacement</h2>
+                <p class="section-desc">Every hazardous industrial chemical mapped to a safe, consumer-available alternative.</p>
             </div>
             <div class="grid-2 reveal" style="gap: 16px;">
                 <div class="card card-dark" style="padding: 20px 24px;">
