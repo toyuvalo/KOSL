@@ -64,7 +64,7 @@
                         <span style="color: rgba(255,255,255,0.3)">${FOOTER_MARK_SVG}</span>
                         <span class="footer-brand-name">KOSL</span>
                     </div>
-                    <p>Open source tools and processes for accessible semiconductor fabrication.</p>
+                    <p>Home semiconductor fabrication. Open source. Toronto.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Navigation</h4>
@@ -94,7 +94,7 @@
                 <span class="footer-copy">&copy; 2026 KOSL &mdash; Kropp Olsha Science Lab. All rights reserved.</span>
                 <div class="footer-meta">
                     <span class="footer-location">Toronto, Canada</span>
-                    <span class="footer-version">v0.2.0</span>
+                    <span class="footer-version">v0.2.1</span>
                 </div>
             </div>
         </div>`;
