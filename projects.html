@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects — KOSL</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect x='2' y='2' width='28' height='28' rx='1' fill='none' stroke='%23434e64' stroke-width='2'/%3E%3Ccircle cx='16' cy='16' r='10' fill='none' stroke='%23434e64' stroke-width='1.5'/%3E%3Crect x='8.3' y='8.3' width='15.4' height='15.4' rx='1' fill='none' stroke='%23434e64' stroke-width='1.5' transform='rotate(45 16 16)'/%3E%3Ccircle cx='16' cy='16' r='4' fill='none' stroke='%23434e64' stroke-width='1.5'/%3E%3Ccircle cx='16' cy='16' r='1.5' fill='%23434e64'/%3E%3C/svg%3E">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Page Header -->
+    <div class="page-header">
+        <span class="label">Research</span>
+        <h1>Projects</h1>
+        <p>Active and planned research developing open source semiconductor fabrication processes.</p>
+    </div>
+
+    <!-- Active Projects -->
+    <section class="section">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Active</div>
+                <h2 class="section-heading">Current research</h2>
+            </div>
+            <div class="grid-2 reveal">
+                <div class="card card-featured" style="padding: 36px;">
+                    <div class="project-card">
+                        <div class="project-card-icon">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <ellipse cx="24" cy="24" rx="20" ry="17" fill="none" stroke="var(--navy)" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="10" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
+                                <rect x="16" y="16" width="16" height="16" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.5" transform="rotate(45 24 24)"/>
+                                <circle cx="24" cy="24" r="3" fill="var(--navy)"/>
+                            </svg>
+                        </div>
+                        <span class="badge badge-active" style="margin-bottom: 12px; display: inline-block;">Phase 1 — Active</span>
+                        <h3>KOSL Albu</h3>
+                        <div class="project-tagline">Egg white photoresist for home semiconductor fabrication</div>
+                        <p>
+                            Open source process for lithography using egg white (albumen) as photoresist
+                            with riboflavin (vitamin B2) as photosensitizer. Uses a 5W 450nm laser diode
+                            on a $525 CNC setup. Develops in plain water.
+                        </p>
+                        <p>
+                            Currently validating photoresist at 100μm feature size. The ovalbumin protein
+                            crosslinks under 450nm illumination via riboflavin-mediated singlet oxygen
+                            generation, creating water-insoluble patterned regions.
+                        </p>
+                        <div class="project-card-footer">
+                            <span class="tag">100μm target</span>
+                            <span class="tag">$525 setup</span>
+                            <span class="tag">450nm laser</span>
+                            <span class="tag">Water develop</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" style="padding: 36px;">
+                    <div class="project-card">
+                        <div class="project-card-icon">
+                            <svg viewBox="0 0 48 48" width="48" height="48">
+                                <rect x="4" y="4" width="40" height="40" rx="2" fill="none" stroke="var(--navy)" stroke-width="2"/>
+                                <circle cx="24" cy="24" r="14" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
+                                <rect x="14" y="14" width="20" height="20" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.5" transform="rotate(45 24 24)"/>
+                                <circle cx="24" cy="24" r="5" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
+                                <rect x="20" y="20" width="8" height="8" rx="1" fill="none" stroke="var(--navy)" stroke-width="1"/>
+                                <circle cx="24" cy="24" r="1.5" fill="var(--navy)"/>
+                            </svg>
+                        </div>
+                        <span class="badge badge-upcoming" style="margin-bottom: 12px; display: inline-block;">Planned</span>
+                        <h3>KOSL Machine 3</h3>
+                        <div class="project-tagline">Automated maskless direct-write lithography</div>
+                        <p>
+                            Desktop lithography system with machine vision alignment and automated
+                            wafer handling. 10 micrometer resolution using DLP maskless projection.
+                            Pending completion of Albu Phase 2 validation.
+                        </p>
+                        <p>
+                            Will serve as the platform for the KOSL 10MT5000 Auto product line —
+                            a turnkey desktop semiconductor fab system with HEPA enclosure.
+                        </p>
+                        <div class="project-card-footer">
+                            <span class="tag">10μm target</span>
+                            <span class="tag">Machine vision</span>
+                            <span class="tag">DLP projection</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Roadmap -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header reveal">
+                <div class="section-label">Roadmap</div>
+                <h2 class="section-heading">Albu development phases</h2>
+                <p class="section-desc">From photoresist validation to a fabricated CPU — the complete research arc.</p>
+            </div>
+            <div class="timeline reveal">
+                <div class="timeline-item">
+                    <div class="timeline-dot active"></div>
+                    <div class="timeline-phase">Phase 1 — Current</div>
+                    <div class="timeline-title">Photoresist Validation</div>
+                    <div class="timeline-desc">
+                        Prove egg white photoresist works at 450nm using a CNC laser and optical microscope.
+                        Success criterion: microscope-verified patterns at 100μm feature size on glass, developed in water.
+                    </div>
+                    <div class="timeline-tags">
+                        <span class="tag">$525 setup</span>
+                        <span class="tag">CNC 3018 + laser</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-phase">Phase 2</div>
+                    <div class="timeline-title">First Transistors</div>
+                    <div class="timeline-desc">
+                        Build first working transistors — ZnO TFTs on glass, Schottky-barrier MOSFETs,
+                        laser-doped Si MOSFETs, Cu2O p-type TFTs. Culminates in a 5-stage ring oscillator (10 transistors).
+                    </div>
+                    <div class="timeline-tags">
+                        <span class="tag">ZnO TFT</span>
+                        <span class="tag">Si MOSFET</span>
+                        <span class="tag">Ring oscillator</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-phase">Phase 2.5</div>
+                    <div class="timeline-title">Automated Lithography Upgrade</div>
+                    <div class="timeline-desc">
+                        Transition from CNC laser to DLP maskless projection lithography. Semi-automated
+                        spin coating and development. Basis for the KOSL 50MT500 Auto product.
+                    </div>
+                    <div class="timeline-tags">
+                        <span class="tag">50μm features</span>
+                        <span class="tag">DLP projection</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-phase">Phase 3</div>
+                    <div class="timeline-title">Full Automated Fab Line</div>
+                    <div class="timeline-desc">
+                        Complete automated fabrication process — precision stages, HEPA enclosure, machine
+                        vision alignment. 10 engineering sub-phases. Basis for the KOSL 10MT5000 Auto.
+                    </div>
+                    <div class="timeline-tags">
+                        <span class="tag">10μm features</span>
+                        <span class="tag">~5,000 transistors</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-phase">Phase 4</div>
+                    <div class="timeline-title">First CPU</div>
+                    <div class="timeline-desc">
+                        Fabricate a working CPU — either a custom 4-bit "Albu-4" (~910 transistors) or a
+                        SERV RISC-V core (~4,500 transistors), depending on yield data from Phase 3.
+                    </div>
+                    <div class="timeline-tags">
+                        <span class="tag">4-bit or RISC-V</span>
+                        <span class="tag">Up to 4,500 transistors</span>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-phase">Future</div>
+                    <div class="timeline-title">DUV Stepper</div>
+                    <div class="timeline-desc">
+                        Schwarzschild reflective objective DUV stepper using a surplus KrF excimer laser.
+                        500nm resolution — enabling Pentium-class chip complexity (millions of transistors).
+                    </div>
+                    <div class="timeline-tags">
+                        <span class="tag">500nm features</span>
+                        <span class="tag">Millions of transistors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="components.js"></script>
+</body>
+</html>

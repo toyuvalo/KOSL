@@ -11,34 +11,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <!-- Navigation -->
-    <nav>
-        <div class="nav-inner">
-            <a href="#" class="nav-logo">
-                <svg class="nav-mark" viewBox="0 0 36 36" width="28" height="28">
-                    <rect x="2" y="2" width="32" height="32" rx="1" fill="none" stroke="var(--navy)" stroke-width="2"/>
-                    <circle cx="18" cy="18" r="11" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
-                    <rect x="9.5" y="9.5" width="17" height="17" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.5" transform="rotate(45 18 18)"/>
-                    <circle cx="18" cy="18" r="4.5" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
-                    <circle cx="18" cy="18" r="1.8" fill="var(--navy)"/>
-                </svg>
-                <span class="nav-logo-text">KOSL</span>
-            </a>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#products">Products</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
-
     <!-- Hero -->
     <section class="hero">
         <canvas id="hero-canvas"></canvas>
         <div class="hero-content">
-            <svg class="hero-mark" viewBox="0 0 120 120" width="120" height="120">
+            <svg class="hero-mark" viewBox="0 0 120 120" width="110" height="110">
                 <rect x="5" y="5" width="110" height="110" rx="2" fill="none" stroke="white" stroke-width="2" opacity="0.9"/>
                 <circle cx="60" cy="60" r="40" fill="none" stroke="white" stroke-width="1.5" opacity="0.7"/>
                 <rect x="31.7" y="31.7" width="56.6" height="56.6" rx="2" fill="none" stroke="white" stroke-width="1.5" opacity="0.6" transform="rotate(45 60 60)"/>
@@ -46,194 +23,190 @@
                 <rect x="50" y="50" width="20" height="20" rx="1" fill="none" stroke="white" stroke-width="1.5" opacity="0.4"/>
                 <circle cx="60" cy="60" r="3" fill="white" opacity="0.8"/>
             </svg>
-            <h1>Kropp Olsha Science Lab</h1>
-            <p class="hero-sub">Open source tools and processes for accessible semiconductor fabrication.</p>
-        </div>
-    </section>
-
-    <!-- About -->
-    <section id="about" class="section">
-        <div class="section-inner">
-            <h2 class="section-heading">About KOSL</h2>
-            <div class="about-grid">
-                <div class="about-text">
-                    <p>
-                        KOSL is an applied sciences lab based in Toronto, developing open source
-                        processes and equipment for home semiconductor fabrication. Our goal is to make
-                        chip-making as accessible as making PCBs.
-                    </p>
-                    <p>
-                        Every process we develop follows three principles: no toxic chemicals, no cleanroom
-                        required, and no million-dollar equipment. All research, designs, and experiment
-                        results are published under permissive licenses.
-                    </p>
-                </div>
-                <div class="about-values">
-                    <div class="value-card">
-                        <svg class="value-icon" viewBox="0 0 36 36" width="32" height="32">
-                            <rect x="4" y="4" width="28" height="28" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
-                            <circle cx="18" cy="18" r="9" fill="none" stroke="var(--navy)" stroke-width="1.2"/>
-                            <circle cx="18" cy="18" r="2" fill="var(--navy)"/>
-                        </svg>
-                        <div>
-                            <strong>Open Source</strong>
-                            <span>All designs, processes, and research published under permissive licenses.</span>
-                        </div>
-                    </div>
-                    <div class="value-card">
-                        <svg class="value-icon" viewBox="0 0 36 36" width="32" height="32">
-                            <circle cx="18" cy="18" r="14" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
-                            <rect x="10" y="10" width="16" height="16" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.2" transform="rotate(45 18 18)"/>
-                            <circle cx="18" cy="18" r="2" fill="var(--navy)"/>
-                        </svg>
-                        <div>
-                            <strong>Accessible</strong>
-                            <span>No specialty chemicals. Everything from Amazon and the grocery store.</span>
-                        </div>
-                    </div>
-                    <div class="value-card">
-                        <svg class="value-icon" viewBox="0 0 36 36" width="32" height="32">
-                            <rect x="4" y="4" width="28" height="28" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.5" transform="rotate(45 18 18)"/>
-                            <circle cx="18" cy="18" r="8" fill="none" stroke="var(--navy)" stroke-width="1.2"/>
-                            <circle cx="18" cy="18" r="2" fill="var(--navy)"/>
-                        </svg>
-                        <div>
-                            <strong>Safe</strong>
-                            <span>No HF. No organic solvents. Water-based development. Grocery store etchants.</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Projects -->
-    <section id="projects" class="section section-dark">
-        <div class="section-inner">
-            <h2 class="section-heading light">Projects</h2>
-            <div class="card-grid">
-                <div class="project-card">
-                    <div class="card-header">
-                        <svg class="card-icon" viewBox="0 0 36 36" width="36" height="36">
-                            <ellipse cx="18" cy="18" rx="15" ry="13" fill="none" stroke="white" stroke-width="1.5"/>
-                            <circle cx="18" cy="18" r="8" fill="none" stroke="white" stroke-width="1.2"/>
-                            <rect x="12" y="12" width="12" height="12" rx="1" fill="none" stroke="white" stroke-width="1.2" transform="rotate(45 18 18)"/>
-                            <circle cx="18" cy="18" r="2" fill="white"/>
-                        </svg>
-                        <span class="badge badge-active">Active</span>
-                    </div>
-                    <h3>KOSL Albu</h3>
-                    <p>
-                        Open source home semiconductor fabrication using egg white photoresist
-                        and grocery store chemicals. Currently in Phase 1: Photoresist Validation.
-                    </p>
-                    <div class="card-meta">
-                        <span>100μm features</span>
-                        <span>$525 setup</span>
-                    </div>
-                </div>
-                <div class="project-card project-card-upcoming">
-                    <div class="card-header">
-                        <svg class="card-icon" viewBox="0 0 36 36" width="36" height="36">
-                            <rect x="3" y="3" width="30" height="30" rx="1" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.5"/>
-                            <circle cx="18" cy="18" r="10" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"/>
-                            <rect x="10.3" y="10.3" width="15.4" height="15.4" rx="1" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2" transform="rotate(45 18 18)"/>
-                            <circle cx="18" cy="18" r="3.5" fill="none" stroke="rgba(255,255,255,0.7)" stroke-width="1.2"/>
-                            <circle cx="18" cy="18" r="1.5" fill="rgba(255,255,255,0.7)"/>
-                        </svg>
-                        <span class="badge badge-upcoming">Planned</span>
-                    </div>
-                    <h3>KOSL Machine 3</h3>
-                    <p>
-                        Automated maskless direct-write lithography system with machine vision
-                        alignment. 10 micrometer resolution. Pending Albu Phase 2 completion.
-                    </p>
-                    <div class="card-meta">
-                        <span>10μm features</span>
-                        <span>Machine vision</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Products -->
-    <section id="products" class="section section-dark" style="padding-top: 0;">
-        <div class="section-inner">
-            <h2 class="section-heading light">Products</h2>
-            <div class="card-grid card-grid-3">
-                <div class="project-card">
-                    <div class="card-header">
-                        <span class="badge badge-active">Available Now</span>
-                    </div>
-                    <h3>KOSL RiboResist</h3>
-                    <p>
-                        Water-based photoresist (PVA + riboflavin). Non-toxic, shelf-stable.
-                        Spin coat, expose at 405–455nm, develop in water.
-                    </p>
-                    <div class="card-price">$29 CAD</div>
-                    <div class="card-meta"><span>60mL / 200+ slides</span></div>
-                </div>
-                <div class="project-card project-card-upcoming">
-                    <div class="card-header">
-                        <span class="badge badge-upcoming">Coming 2026</span>
-                    </div>
-                    <h3>KOSL 50MT500 Auto</h3>
-                    <p>
-                        Entry-level automated desktop fab. CNC 3018-based + DLP maskless
-                        lithography. 50μm features, ~500 transistors max.
-                    </p>
-                    <div class="card-price">$4,999 CAD</div>
-                </div>
-                <div class="project-card project-card-upcoming">
-                    <div class="card-header">
-                        <span class="badge badge-upcoming">Coming 2027</span>
-                    </div>
-                    <h3>KOSL 10MT5000 Auto</h3>
-                    <p>
-                        Turnkey desktop semiconductor fab. Maskless DLP lithography,
-                        automated spin coating, HEPA-enclosed cleanroom.
-                    </p>
-                    <div class="card-price">From $3,999 CAD</div>
-                    <div class="card-meta"><span>10–25μm features</span><span>~5,000 transistors</span></div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact -->
-    <section id="contact" class="section">
-        <div class="section-inner contact-section">
-            <h2 class="section-heading">Contact</h2>
-            <p class="contact-text">
-                KOSL is open source. Follow our work, contribute, or get in touch through GitHub.
+            <h1>Kropp Olsha<br>Science Lab</h1>
+            <p class="hero-sub">
+                Open source tools and processes for accessible semiconductor fabrication.
+                No toxic chemicals. No cleanroom. No million-dollar equipment.
             </p>
-            <a href="https://github.com/levkropp" class="btn" target="_blank" rel="noopener">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                GitHub
-            </a>
+            <div class="hero-actions">
+                <a href="projects.html" class="btn btn-primary btn-lg">Our Research →</a>
+                <a href="shop.html" class="btn btn-secondary btn-lg">Shop Products</a>
+            </div>
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="footer-inner">
-            <div class="footer-left">
-                <svg class="footer-mark" viewBox="0 0 36 36" width="24" height="24">
-                    <rect x="3" y="3" width="30" height="30" rx="1" fill="none" stroke="var(--gray-500)" stroke-width="1.5"/>
-                    <circle cx="18" cy="18" r="10" fill="none" stroke="var(--gray-500)" stroke-width="1.2"/>
-                    <rect x="10.3" y="10.3" width="15.4" height="15.4" rx="1" fill="none" stroke="var(--gray-500)" stroke-width="1.2" transform="rotate(45 18 18)"/>
-                    <circle cx="18" cy="18" r="2" fill="var(--gray-500)"/>
-                </svg>
-                <span class="footer-text">&copy; 2026 KOSL &mdash; Kropp Olsha Science Lab</span>
-            </div>
-            <div class="footer-right">
-                <span class="footer-location">Toronto, Canada</span>
-                <span class="footer-version">v0.1.0</span>
+    <!-- Intro Strip -->
+    <div class="intro-strip">
+        <div class="container">
+            <div class="intro-grid">
+                <div class="intro-item reveal">
+                    <svg class="intro-icon" viewBox="0 0 36 36" width="36" height="36">
+                        <rect x="4" y="4" width="28" height="28" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
+                        <circle cx="18" cy="18" r="9" fill="none" stroke="var(--navy)" stroke-width="1.2"/>
+                        <circle cx="18" cy="18" r="2" fill="var(--navy)"/>
+                    </svg>
+                    <strong>Open Source</strong>
+                    <span>All designs, processes, and research published under permissive licenses.</span>
+                </div>
+                <div class="intro-item reveal">
+                    <svg class="intro-icon" viewBox="0 0 36 36" width="36" height="36">
+                        <circle cx="18" cy="18" r="14" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
+                        <rect x="10" y="10" width="16" height="16" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.2" transform="rotate(45 18 18)"/>
+                        <circle cx="18" cy="18" r="2" fill="var(--navy)"/>
+                    </svg>
+                    <strong>Accessible</strong>
+                    <span>No specialty chemicals. Everything from Amazon and the grocery store.</span>
+                </div>
+                <div class="intro-item reveal">
+                    <svg class="intro-icon" viewBox="0 0 36 36" width="36" height="36">
+                        <rect x="4" y="4" width="28" height="28" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.5" transform="rotate(45 18 18)"/>
+                        <circle cx="18" cy="18" r="8" fill="none" stroke="var(--navy)" stroke-width="1.2"/>
+                        <circle cx="18" cy="18" r="2" fill="var(--navy)"/>
+                    </svg>
+                    <strong>Safe</strong>
+                    <span>No HF. No organic solvents. Water-based development. Grocery store etchants.</span>
+                </div>
             </div>
         </div>
-    </footer>
+    </div>
+
+    <!-- About Preview -->
+    <section class="section">
+        <div class="container">
+            <div class="grid-2 reveal">
+                <div>
+                    <div class="section-label">About KOSL</div>
+                    <h2 class="section-heading">Making chips<br>like making PCBs</h2>
+                    <p style="margin-bottom: 16px;">
+                        KOSL is an applied sciences lab based in Toronto developing open source
+                        processes and equipment for home semiconductor fabrication.
+                    </p>
+                    <p style="margin-bottom: 24px;">
+                        We replace every toxic, expensive, or restricted chemical in conventional
+                        semiconductor manufacturing with grocery-store alternatives. Egg whites
+                        as photoresist. Drain cleaner as etchant. Vitamin B2 as photosensitizer.
+                    </p>
+                    <a href="about.html" class="btn btn-outline btn-sm">Learn More →</a>
+                </div>
+                <div class="stat-grid" style="align-self: center;">
+                    <div class="stat-item">
+                        <div class="stat-value">$525</div>
+                        <div class="stat-label">Starting setup</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">0</div>
+                        <div class="stat-label">Toxic chemicals</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">100%</div>
+                        <div class="stat-label">Open source</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-value">100μm</div>
+                        <div class="stat-label">Feature target</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="section section-alt">
+        <div class="container">
+            <div class="section-header section-header-center reveal">
+                <div class="section-label">Products</div>
+                <h2 class="section-heading">From photoresist to fab systems</h2>
+                <p class="section-desc">
+                    Everything you need to start fabricating semiconductors at home,
+                    from individual materials to turnkey desktop systems.
+                </p>
+            </div>
+            <div class="grid-3 reveal">
+                <div class="card product-preview-card">
+                    <div class="product-preview-visual">
+                        <svg viewBox="0 0 80 80" width="80" height="80">
+                            <rect x="20" y="8" width="40" height="64" rx="4" fill="none" stroke="var(--navy)" stroke-width="2"/>
+                            <rect x="26" y="42" width="28" height="24" rx="2" fill="none" stroke="var(--navy)" stroke-width="1.5" opacity="0.5"/>
+                            <circle cx="40" cy="28" r="8" fill="none" stroke="var(--navy)" stroke-width="1.5"/>
+                            <circle cx="40" cy="28" r="2" fill="var(--navy)"/>
+                        </svg>
+                    </div>
+                    <div class="product-preview-body">
+                        <span class="badge badge-active" style="margin-bottom: 10px; display: inline-block;">Available Now</span>
+                        <h3>KOSL RiboResist</h3>
+                        <p>Water-based photoresist. PVA + riboflavin. Non-toxic, shelf-stable.</p>
+                        <div class="product-preview-footer">
+                            <span class="product-preview-price">$29 <small>CAD</small></span>
+                            <a href="shop.html#riboresist" class="btn btn-navy btn-sm">View →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-preview-card">
+                    <div class="product-preview-visual">
+                        <svg viewBox="0 0 80 80" width="80" height="80">
+                            <rect x="10" y="20" width="60" height="48" rx="2" fill="none" stroke="var(--navy)" stroke-width="2"/>
+                            <rect x="18" y="28" width="20" height="20" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.5" opacity="0.5"/>
+                            <line x1="10" y1="48" x2="70" y2="48" stroke="var(--navy)" stroke-width="1.5" opacity="0.3"/>
+                            <rect x="48" y="30" width="14" height="14" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.2" transform="rotate(45 55 37)" opacity="0.5"/>
+                            <line x1="30" y1="12" x2="30" y2="20" stroke="var(--navy)" stroke-width="1.5"/>
+                            <line x1="50" y1="12" x2="50" y2="20" stroke="var(--navy)" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="product-preview-body">
+                        <span class="badge badge-upcoming" style="margin-bottom: 10px; display: inline-block;">Coming 2026</span>
+                        <h3>50MT500 Auto</h3>
+                        <p>Entry-level automated desktop fab. 50μm features, ~500 transistors.</p>
+                        <div class="product-preview-footer">
+                            <span class="product-preview-price">$4,999 <small>CAD</small></span>
+                            <a href="shop.html#machines" class="btn btn-outline btn-sm">Details →</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card product-preview-card card-featured">
+                    <div class="product-preview-visual">
+                        <svg viewBox="0 0 80 80" width="80" height="80">
+                            <rect x="8" y="16" width="64" height="52" rx="2" fill="none" stroke="var(--navy)" stroke-width="2"/>
+                            <rect x="16" y="24" width="24" height="24" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.5" opacity="0.5"/>
+                            <circle cx="28" cy="36" r="6" fill="none" stroke="var(--navy)" stroke-width="1.2" opacity="0.6"/>
+                            <circle cx="28" cy="36" r="1.5" fill="var(--navy)" opacity="0.6"/>
+                            <rect x="46" y="26" width="18" height="18" rx="1" fill="none" stroke="var(--navy)" stroke-width="1.2" opacity="0.4"/>
+                            <line x1="8" y1="52" x2="72" y2="52" stroke="var(--navy)" stroke-width="1.5" opacity="0.3"/>
+                            <rect x="14" y="56" width="8" height="4" rx="1" fill="var(--navy)" opacity="0.3"/>
+                            <rect x="26" y="56" width="8" height="4" rx="1" fill="var(--navy)" opacity="0.3"/>
+                            <line x1="28" y1="8" x2="28" y2="16" stroke="var(--navy)" stroke-width="1.5"/>
+                            <line x1="52" y1="8" x2="52" y2="16" stroke="var(--navy)" stroke-width="1.5"/>
+                        </svg>
+                    </div>
+                    <div class="product-preview-body">
+                        <span class="badge badge-upcoming" style="margin-bottom: 10px; display: inline-block;">Coming 2027</span>
+                        <h3>10MT5000 Auto</h3>
+                        <p>Turnkey desktop fab. HEPA-enclosed, maskless DLP, machine vision.</p>
+                        <div class="product-preview-footer">
+                            <span class="product-preview-price">$3,999+ <small>CAD</small></span>
+                            <a href="shop.html#machines" class="btn btn-outline btn-sm">Details →</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Banner -->
+    <section class="section-dark cta-banner">
+        <div class="container reveal">
+            <h2>Semiconductor fabrication for everyone.</h2>
+            <p>Follow our research, contribute to the process, or build your own lab.</p>
+            <div class="hero-actions">
+                <a href="https://github.com/levkropp" class="btn btn-primary" target="_blank" rel="noopener">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                    GitHub
+                </a>
+                <a href="contact.html" class="btn btn-secondary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
 
     <script src="hero-animation.js"></script>
+    <script src="components.js"></script>
 </body>
 </html>
