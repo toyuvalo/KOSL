@@ -94,23 +94,44 @@
                 <span class="footer-copy">&copy; 2026 KOSL &mdash; Kropp Olsha Science Lab. All rights reserved.</span>
                 <div class="footer-meta">
                     <span class="footer-location">Toronto, Canada</span>
-                    <span class="footer-version">v0.2.2</span>
+                    <span class="footer-version">v0.3.0</span>
                 </div>
             </div>
         </div>`;
     document.body.append(footer);
 
-    // ── SCROLL REVEAL ──
+    // ── NAV SCROLL STATE ──
+    let ticking = false;
+    window.addEventListener('scroll', () => {
+        if (!ticking) {
+            requestAnimationFrame(() => {
+                nav.classList.toggle('scrolled', window.scrollY > 20);
+                ticking = false;
+            });
+            ticking = true;
+        }
+    });
+
+    // ── SCROLL REVEAL with stagger ──
     const reveals = document.querySelectorAll('.reveal');
     if (reveals.length) {
+        let revealIndex = 0;
         const obs = new IntersectionObserver((entries) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
+                    // Stagger by 60ms per element visible in the same frame
+                    const delay = revealIndex * 60;
+                    revealIndex++;
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, delay);
+                    // Reset stagger counter after a batch
+                    clearTimeout(window._revealReset);
+                    window._revealReset = setTimeout(() => { revealIndex = 0; }, 200);
                     obs.unobserve(entry.target);
                 }
             });
-        }, { threshold: 0.1, rootMargin: '0px 0px -30px 0px' });
+        }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
         reveals.forEach(el => obs.observe(el));
     }
 })();
