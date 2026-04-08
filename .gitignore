@@ -6,3 +6,6 @@ Thumbs.db
 *.log
 dist/
 .cache/
+
+# Large media — host externally or use Git LFS
+Video/
