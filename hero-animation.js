@@ -3,6 +3,7 @@
 (function () {
     const canvas = document.getElementById('hero-canvas');
     if (!canvas) return;
+    if (window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const ctx = canvas.getContext('2d');
 
     let w, h, dpr;
